@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trote Solidário - 2025</title> <!-- Esse fica na aba da página -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="./js/scripts.js"></script>
+    </head>
+    <body>
+        <header> <!-- Cabeçalho do corpo da página -->
+            Trote Solidário - 2025
+        </header>
+        <nav> <!-- Sempre que formos criar um menu, utilizamos nav (navegação) -->
+            <div id="links-menu">
+                <a href="index.html"> Home</a>
+                <a href="introducao.html"> Introdução </a>
+                <a href="objetivo.html"> Objetivo </a>
+                <a href="formato.html"> Formato </a>
+                <a href="gincana.html"> Gincana </a>
+                <a href="integracao.html"> Integração </a>
+                <a href="observacoes.html"> Observações </a>
+                <a href="calculadoras.html"> Calculadoras </a>
+            </div>
+            <img src="images/trote.jpg" alt="Trote Solidário">
+        </nav>
+        <div class="container">
+            <h2>
+                Calculadoras de Pontuação
+            </h2>
+            <form> <!-- Formulário para entrada de dados do usuário -->
+                <div class="campos">
+                    <label> Selecione a cor da equipe </label>
+                    <select id="equipe">
+                        <option value="Laranja"> Laranja </option>
+                        <option value="Preto"> Preto </option>
+                        <option value="Roxo"> Roxo </option>
+                        <option value="Verde"> Verde </option>
+                        <option value="Vermelha"> Vermelha </option>
+                    </select>
+                </div>
+                <div class="campos">
+                    <label> Ação Social (pts) </label>
+                    <input type="number" id="acaoSocial">
+                </div>
+                <div class="campos">
+                    <label> Homenagem (pts) </label>
+                    <input type="number" id="homenagem">
+                </div>
+                <div class="campos">
+                    <label> Mascote (pts) </label>
+                    <input type="number" id="mascote">
+                </div>
+                <div class="campos">
+                    <label> Caracterização e Animação (pts) </label>
+                    <input type="number" id="caracterizacaoeanimacao">
+                </div>
+                <div class="campos">
+                    <label> Atividades Recreativas (pts) </label>
+                    <input type="number" id="atividadesrecreativas">
+                </div>
+                <div class="campos">
+                    <label> Registro Audiovisual (pts) </label>
+                    <input type="number" id="registroaudiovisual">
+                </div>
+                <div class="campos">
+                    <label> Doação de Sangue (quantidade) </label>
+                    <input type="number" id="doacaodesangue">
+                </div>
+                <div class="campos">
+                    <label> Caixas de Leite (litros)</label>
+                    <input type="number" id="leite">
+                </div>
+                <div class="campos">
+                    <label> Kit alimentação </label>
+                    <input type="number" id="kit">
+                </div>
+                <div class="campos">
+                    <label> Lata de suplemento </label>
+                    <input type="number" id="suplemento">
+                </div>
+                <div class="campos">
+                    <label> Pacote de Arrox 5 Kg </label>
+                    <input type="number" id="arroz5kg">
+                </div>
+                <div class="campos">
+                    <label> Pacote de Arroz 01 Kg </label>
+                    <input type="number" id="arroz1kg">
+                </div>
+                <div class="campos">
+                    <label> Pacote de Feijão 02 Kg </label>
+                    <input type="number" id="feijao2kg">
+                </div>
+                <div class="campos">
+                    <label> Pacote de Feijão 01 Kg </label>
+                    <input type="number" id="feijao1kg">
+                </div>
+                <div class="campos">
+                    <label> Pacote de Macarrão de 400/500 gramas </label>
+                    <input type="number" id="macarrao500gramas">
+                </div>
+                <div class="campos">
+                    <label> Óleo 900 ml </label>
+                    <input type="number" id="oleo900ml">
+                </div>
+
+                <div class="campos">
+                    <button type="button" onclick="calcular()"> Calcular </button>
+                    <label id="soma"></label>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div>
+                <p><strong>Coordenação 2025</strong></p>
+                <p>trotesolidario@facef.br</p>
+                <p><strong>Prof. Dr. José Alfredo de Pádua Guerra</strong> – Reitor - reitoria@facef.br</p>
+                <p><strong>Profa. Dra. Melissa Franchini C. Bandos</strong> – Pró-Reitora de Extensão Com. e Desenv. - melissa@facef.br</p>
+                <p><strong>Prof. Dr. Alfredo José Machado Neto</strong> – Pró-Reitor de Administração - josealfredo@facef.br</p>
+                <p><strong>Profa. Ma. Flávia Haddad França</strong> – Coordenadora de Extensão. - flaviahaddad@facef.br</p>
+                <p><strong>Profa. Ma. Alba Penteado</strong> – Coordenadora de Marketing - alba@facef.br</p>
+                <p><strong>Me. Welton Roberto Silva</strong> – Procurador Institucional - welton@facef.br</p>
+                <p><strong>Me. Lucas Antônio Santos</strong> – Setor de Eventos - lucas@facef.br</p>
+            </div>
+        </footer>
+    </body>
+</html>
